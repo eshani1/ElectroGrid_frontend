@@ -39,7 +39,7 @@ body {
 <h3 class="text-primary" style="margin-left: 110px;">User Details</h3>
 <%--CREATE USER FORM--%>
 <div class="container mt-5">
-    <form class="row g-3">
+    <form class="row g-3" enctype="multipart/form-data">
         <div class="col-md-2">
             <label for="txtUserId" class="form-label">User ID</label>
             <input type="text" class="form-control" id="txtUserId" placeholder="User ID">
@@ -54,7 +54,8 @@ body {
         </div>
         <div class="col-md-6">
             <label for="txtPassword" class="form-label">Password</label>
-            <input type="text" class="form-control" id="txtPassword" pattern=".{4,}" title="four or more characters" required placeholder="Password"  >
+            <input type="text"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{4,}"
+               title="Must contain at least one  number and one uppercase and lowercase letter, and at least 4 or more characters" class="form-control" id="txtPassword" required placeholder="Password"  >
         </div>
         <div class="col-md-6">
             <label for="txtContact" class="form-label">Contact Number</label>
