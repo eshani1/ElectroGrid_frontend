@@ -1,13 +1,27 @@
 <html>
 <head>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+<style>
+body {
+  background-image: url('img/pafB.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+ 
+}
+</style>
+
+
+
+
 </head>
 <body>
 
 <%--NAVIGATION--%>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#">User Insert</a>
+        <a class="navbar-brand" href="#">ELECTROGRID</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -21,7 +35,8 @@
     </div>
 </nav>
 <%--END: NAVIGATION--%>
-
+<br>
+<h3 class="text-primary" style="margin-left: 110px;">User Details</h3>
 <%--CREATE USER FORM--%>
 <div class="container mt-5">
     <form class="row g-3">
